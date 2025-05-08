@@ -30,117 +30,12 @@ foreground = "#000000"
 
 [font]
 size = 15.0
-#size = 22.0
+#size = 26.0
 
 [font.normal]
 #family = "BlexMono Nerd Font"
 family = "AnonymicePro Nerd Font Mono"
 style = "Bold"
-
-[[keyboard.bindings]]
-chars = "\u001B0"
-key = "Key0"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B1"
-key = "Key1"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B2"
-key = "Key2"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B3"
-key = "Key3"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B4"
-key = "Key4"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B5"
-key = "Key5"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B6"
-key = "Key6"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B7"
-key = "Key7"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B8"
-key = "Key8"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001B9"
-key = "Key9"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u0002%"
-key = "D"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002\""
-key = "D"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0002c"
-key = "T"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002n"
-key = "RBracket"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0002p"
-key = "LBracket"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u0002x"
-key = "W"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002\u001B[D"
-key = "Left"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002\u001B[C"
-key = "Right"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002\u001B[B"
-key = "Down"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002\u001B[A"
-key = "Up"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0002k"
-key = "K"
-mods = "Command"
 
 [window]
 decorations = "buttonless"
