@@ -1,0 +1,82 @@
+/* Ensure you have a Nerd Font installed for the icons */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* The Main Bar - True Black turns OLED pixels OFF */
+window#waybar {
+    background-color: #000000;
+    color: #a6adc8; /* Soft gray to prevent burn-in */
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 1px solid #111111;
+}
+
+/* GNOME-style Pill Containers */
+#workspaces, 
+#window, 
+#clock, 
+#network, 
+#pulseaudio, 
+#battery,
+#custom-power {
+    background-color: #111111; /* Very dark gray for subtle depth */
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+/* Workspace Styling */
+#workspaces button {
+    padding: 0 5px;
+    color: #585b70;
+    background-color: transparent;
+}
+
+#workspaces button.active {
+    color: #89b4fa; /* Soft blue focus */
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+/* Center Clock */
+#clock {
+    background-color: transparent;
+    font-weight: bold;
+    color: #cdd6f4;
+}
+
+/* Status Colors */
+#battery.charging, #battery.plugged {
+    color: #a6e3a1; /* Soft green */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8;
+    color: #000000;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #000000;
+        color: #f38ba8;
+    }
+}
+
+/* Power Button */
+#custom-power {
+    background-color: transparent;
+    color: #f38ba8;
+    margin-right: 8px;
+}
