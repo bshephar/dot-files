@@ -14,15 +14,15 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec systemctl --user start sway-session.target
 exec gnome-keyring-daemon --start --components=secrets
-exec swayidle -w \
-    timeout 300 'swaylock -f -i "/home/bshephar/Firefox Developer Edition_wallpaper.png"' \
-    before-sleep 'swaylock -f -i "/home/bshephar/Firefox Developer Edition_wallpaper.png"'
 
-# Wallpaper (Sway has built-in wallpaper support, but you can use swaybg)
-exec swaybg -i "/home/bshephar/Firefox Developer Edition_wallpaper.png" -m fill
+exec swayidle -w \
+    timeout 300 'swaylock -f -i "$HOME/Pictures/sway-wp"' \
+    before-sleep 'swaylock -f -i "$HOME/Pictures/sway-wp"'
+
+output * bg "$HOME/Pictures/sway-wp" fill
 
 ### General Appearance
-default_border pixel 1
+default_border pixel 5
 gaps inner 2
 gaps outer 4
 smart_borders on
